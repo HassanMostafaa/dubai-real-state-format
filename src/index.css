@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-secondary-500 font-sans;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-dubai-gold hover:bg-dubai-gold-dark text-secondary-800;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/20 text-white border-2 border-white/30;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-secondary-800 mb-4 font-display;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden;
+  }
+
+  .input {
+    @apply w-full p-3 rounded-lg border border-secondary-200 focus:outline-none focus:ring-2 focus:ring-dubai-gold;
+  }
+
+  .select {
+    @apply w-full p-3 rounded-lg border border-secondary-200 focus:outline-none focus:ring-2 focus:ring-dubai-gold;
+  }
+}
